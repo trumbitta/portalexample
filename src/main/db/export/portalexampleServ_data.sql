@@ -2,8 +2,9 @@
 -- PostgreSQL database dump
 --
 
--- Started on 2012-04-05 16:02:36 CEST
+-- Started on 2012-06-11 16:18:14 CEST
 
+SET statement_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = off;
 SET check_function_bodies = false;
@@ -13,7 +14,7 @@ SET escape_string_warning = off;
 SET search_path = public, pg_catalog;
 
 --
--- TOC entry 1794 (class 0 OID 17418331)
+-- TOC entry 1794 (class 0 OID 875690)
 -- Dependencies: 1488
 -- Data for Name: api_oauth_consumers; Type: TABLE DATA; Schema: public; Owner: agile
 --
@@ -21,7 +22,7 @@ SET search_path = public, pg_catalog;
 
 
 --
--- TOC entry 1795 (class 0 OID 17418337)
+-- TOC entry 1795 (class 0 OID 875696)
 -- Dependencies: 1489
 -- Data for Name: api_oauth_tokens; Type: TABLE DATA; Schema: public; Owner: agile
 --
@@ -29,7 +30,7 @@ SET search_path = public, pg_catalog;
 
 
 --
--- TOC entry 1796 (class 0 OID 17418340)
+-- TOC entry 1796 (class 0 OID 875699)
 -- Dependencies: 1490
 -- Data for Name: apicatalog_methods; Type: TABLE DATA; Schema: public; Owner: agile
 --
@@ -37,7 +38,7 @@ SET search_path = public, pg_catalog;
 
 
 --
--- TOC entry 1797 (class 0 OID 17418343)
+-- TOC entry 1797 (class 0 OID 875702)
 -- Dependencies: 1491
 -- Data for Name: apicatalog_services; Type: TABLE DATA; Schema: public; Owner: agile
 --
@@ -45,7 +46,7 @@ SET search_path = public, pg_catalog;
 
 
 --
--- TOC entry 1798 (class 0 OID 17418349)
+-- TOC entry 1798 (class 0 OID 875708)
 -- Dependencies: 1492
 -- Data for Name: authgroups; Type: TABLE DATA; Schema: public; Owner: agile
 --
@@ -55,7 +56,7 @@ INSERT INTO authgroups (groupname, descr) VALUES ('administrators', 'Administrat
 
 
 --
--- TOC entry 1799 (class 0 OID 17418352)
+-- TOC entry 1799 (class 0 OID 875711)
 -- Dependencies: 1493
 -- Data for Name: authpermissions; Type: TABLE DATA; Schema: public; Owner: agile
 --
@@ -68,25 +69,28 @@ INSERT INTO authpermissions (permissionname, descr) VALUES ('manageCategories', 
 INSERT INTO authpermissions (permissionname, descr) VALUES ('validateContents', 'Supervision of Contents');
 INSERT INTO authpermissions (permissionname, descr) VALUES ('editContents', 'Content Editing');
 
+
 --
--- TOC entry 1801 (class 0 OID 17418358)
+-- TOC entry 1801 (class 0 OID 875717)
 -- Dependencies: 1495
 -- Data for Name: authroles; Type: TABLE DATA; Schema: public; Owner: agile
 --
 
 INSERT INTO authroles (rolename, descr) VALUES ('admin', 'Administrator');
 
+
 --
--- TOC entry 1800 (class 0 OID 17418355)
--- Dependencies: 1494
+-- TOC entry 1800 (class 0 OID 875714)
+-- Dependencies: 1494 1799 1801
 -- Data for Name: authrolepermissions; Type: TABLE DATA; Schema: public; Owner: agile
 --
 
 INSERT INTO authrolepermissions (rolename, permissionname) VALUES ('admin', 'superuser');
 
+
 --
--- TOC entry 1802 (class 0 OID 17418361)
--- Dependencies: 1496
+-- TOC entry 1802 (class 0 OID 875720)
+-- Dependencies: 1496 1798
 -- Data for Name: authusergroups; Type: TABLE DATA; Schema: public; Owner: agile
 --
 
@@ -94,8 +98,8 @@ INSERT INTO authusergroups (username, groupname) VALUES ('admin', 'administrator
 
 
 --
--- TOC entry 1803 (class 0 OID 17418364)
--- Dependencies: 1497
+-- TOC entry 1803 (class 0 OID 875723)
+-- Dependencies: 1497 1801
 -- Data for Name: authuserroles; Type: TABLE DATA; Schema: public; Owner: agile
 --
 
@@ -103,7 +107,7 @@ INSERT INTO authuserroles (username, rolename) VALUES ('admin', 'admin');
 
 
 --
--- TOC entry 1804 (class 0 OID 17418367)
+-- TOC entry 1804 (class 0 OID 875726)
 -- Dependencies: 1498
 -- Data for Name: authusers; Type: TABLE DATA; Schema: public; Owner: agile
 --
@@ -112,7 +116,7 @@ INSERT INTO authusers (username, passwd, registrationdate, lastaccess, lastpassw
 
 
 --
--- TOC entry 1805 (class 0 OID 17418370)
+-- TOC entry 1805 (class 0 OID 875729)
 -- Dependencies: 1499
 -- Data for Name: authusershortcuts; Type: TABLE DATA; Schema: public; Owner: agile
 --
@@ -131,7 +135,7 @@ INSERT INTO authusershortcuts (username, config) VALUES ('admin', '<shortcuts>
 </shortcuts>');
 
 
--- Completed on 2012-04-05 16:02:36 CEST
+-- Completed on 2012-06-11 16:18:14 CEST
 
 --
 -- PostgreSQL database dump complete

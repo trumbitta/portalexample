@@ -131,7 +131,7 @@
 			<arg value="-s"/>
 			<arg value="-s"/>
 			<arg value="-O"/>
-			<arg value="-D"/>
+			<arg value="--column-inserts"/>
 			<arg value="-v"/>
 			<arg line="-f ${webappname}${test.marker}Port_schema.sql"/>
 			<arg value="${webappname}${test.marker}Port"/>
@@ -159,7 +159,7 @@
 			<arg line="-U ${postgres.username}"/>
 			<arg line="-F p"/>
 			<arg line="-a"/>
-			<arg line="-D" />
+			<arg line="--column-inserts" />
 			<arg line="-v" />
 			<arg line="-f ${webappname}${test.marker}Port_data.sql"/>
 			<arg value="${webappname}${test.marker}Port"/>
@@ -173,7 +173,7 @@
 			<arg line="-U ${postgres.username}"/>
 			<arg line="-F p"/>
 			<arg line="-a"/>
-			<arg line="-D" />
+			<arg line="--column-inserts" />
 			<arg line="-v" />
 			<arg line="-f ${webappname}${test.marker}Serv_data.sql"/>
 			<arg value="${webappname}${test.marker}Serv"/>

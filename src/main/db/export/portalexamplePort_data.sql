@@ -2,8 +2,9 @@
 -- PostgreSQL database dump
 --
 
--- Started on 2012-04-05 16:59:01 CEST
+-- Started on 2012-06-11 16:18:14 CEST
 
+SET statement_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = off;
 SET check_function_bodies = false;
@@ -13,7 +14,7 @@ SET escape_string_warning = off;
 SET search_path = public, pg_catalog;
 
 --
--- TOC entry 1823 (class 0 OID 17417277)
+-- TOC entry 1823 (class 0 OID 874631)
 -- Dependencies: 1503
 -- Data for Name: categories; Type: TABLE DATA; Schema: public; Owner: agile
 --
@@ -84,7 +85,7 @@ INSERT INTO categories (catcode, parentcode, titles) VALUES ('tributi', 'moduli'
 
 
 --
--- TOC entry 1824 (class 0 OID 17417283)
+-- TOC entry 1824 (class 0 OID 874637)
 -- Dependencies: 1504
 -- Data for Name: contentmodels; Type: TABLE DATA; Schema: public; Owner: agile
 --
@@ -260,8 +261,9 @@ INSERT INTO contentmodels (modelid, contenttype, descr, model, stylesheet) VALUE
 INSERT INTO contentmodels (modelid, contenttype, descr, model, stylesheet) VALUES (51, 'SDL', 'for List', '<h3><a href="$content.contentLink">$content.Title.text</a></h3>
 $content.ShortDescr.text', NULL);
 
+
 --
--- TOC entry 1826 (class 0 OID 17417292)
+-- TOC entry 1826 (class 0 OID 874646)
 -- Dependencies: 1506
 -- Data for Name: contents; Type: TABLE DATA; Schema: public; Owner: agile
 --
@@ -1102,348 +1104,7 @@ eParticipation is about reconnecting ordinary people with politics and policy-ma
 
 
 --
--- TOC entry 1827 (class 0 OID 17417298)
--- Dependencies: 1507
--- Data for Name: contentsearch; Type: TABLE DATA; Schema: public; Owner: agile
---
-
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG16', 'Title', 'Internal Servlet', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG16', 'Title', 'Internal Servlet', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG15', 'Title', 'Application Service Example', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG15', 'Title', 'Esempio Servizio Applicativo', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW177', 'Date', NULL, '2011-06-15', NULL, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW177', 'Title', 'Online the Mobile Portal', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW177', 'Title', 'Online il Portale Mobile', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW3', 'Date', NULL, '2011-11-21', NULL, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW3', 'Title', 'Online the Portal of Villamarina Municipality', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW3', 'Title', 'Online il Portale del Comune di Villamarina', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG146', 'Title', 'ePartecipation', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG146', 'Title', 'ePartecipation', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG51', 'Title', 'Mobile Area', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG51', 'Title', 'Area Mobile', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG20', 'Title', 'Statute', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG20', 'Title', 'Statuto', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL46', 'Title', 'Tax - Request ICI refund', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL46', 'Title', 'Tributi - Richiesta rimborso ICI', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG19', 'Title', 'Municipal Council', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG19', 'Title', 'Consiglio Comunale', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL7', 'Title', 'Residence Self-certification Form', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL7', 'Title', 'Modulo Autocertificazione Residenza', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL44', 'Title', 'Civil Status Self Certification Form', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL44', 'Title', 'Modulo Autocertificazione Stato Civile', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW23', 'Date', NULL, '2011-10-21', NULL, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW23', 'Title', 'Ground Rent Contribution', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW23', 'Title', 'Contributo canone di locazione 2011', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG54', 'Title', 'Decisions', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG54', 'Title', 'Delibere', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG55', 'Title', 'Announcements', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG55', 'Title', 'Bandi', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG53', 'Title', 'News', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG53', 'Title', 'Notizie', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG28', 'Title', 'Municipal Decisions available in the portal', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG28', 'Title', 'Elenco delle Delibere di Giunta presenti nel portale del Comune', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG17', 'Title', 'Mayor', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG17', 'Title', 'Sindaco', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG49', 'Title', 'Public Relations Office', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG49', 'Title', 'URP - Ufficio Relazioni con il Pubblico', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG11', 'Title', 'Announcements Archive', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG11', 'Title', 'Archivio Bandi', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG12', 'Title', 'News Archive', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG12', 'Title', 'Archivio Notizie', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG13', 'Title', 'Decisions Archive', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG13', 'Title', 'Archivio Delibere', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL42', 'Title', 'Registry - Request Identity Card valid for foreign travel', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL42', 'Title', 'Anagrafe - Richiesta Carta Identità valida per espatrio', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('BND39', 'StartDate', NULL, '2012-05-01', NULL, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('BND39', 'EndDate', NULL, '2012-11-30', NULL, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('BND48', 'StartDate', NULL, '2013-02-28', NULL, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('BND48', 'EndDate', NULL, '2013-10-27', NULL, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('BND5', 'StartDate', NULL, '2013-03-03', NULL, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('BND5', 'EndDate', NULL, '2013-11-14', NULL, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLB4', 'Number', NULL, NULL, 133, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLB4', 'Date', NULL, '2011-09-20', NULL, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLB30', 'Number', NULL, NULL, 20, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLB30', 'Date', NULL, '2011-10-04', NULL, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLB32', 'Number', NULL, NULL, 120, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLB32', 'Date', NULL, '2011-07-01', NULL, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLB36', 'Number', NULL, NULL, 15, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLB36', 'Date', NULL, '2011-07-16', NULL, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG256', 'Title', 'How to sign in', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG256', 'Title', 'Come loggarsi', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG18', 'Title', 'Council', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG18', 'Title', 'Giunta Comunale', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW27', 'Date', NULL, '2011-07-20', NULL, NULL);
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW27', 'Title', 'Folk Music Festival', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW27', 'Title', 'Festival della canzone popolare', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG173', 'Title', 'Web Accessibility', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG173', 'Title', 'Accessibilità', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG29', 'Title', 'Elenco delle Delibere di Consiglio presenti nel portale del Comune', NULL, NULL, 'it');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG14', 'Title', 'Documents Archive', NULL, NULL, 'en');
-INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG14', 'Title', 'Archivio Modulistica', NULL, NULL, 'it');
-
-
---
--- TOC entry 1828 (class 0 OID 17417301)
--- Dependencies: 1508
--- Data for Name: localstrings; Type: TABLE DATA; Schema: public; Owner: agile
---
-
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE', 'en', 'page');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE', 'it', 'pagina');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_MODEL', 'en', 'page model');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_MODEL', 'it', 'modello pagina');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_TITLE', 'en', 'page title');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_TITLE', 'it', 'titolo pagina');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('MAIN_SUBTITLE', 'en', 'Official Site');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('MAIN_SUBTITLE', 'it', 'Sito Istituzionale');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DISCLAIMER', 'en', 'Warning!');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DISCLAIMER', 'it', 'Attenzione!');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DISCLAIMER_NOTE', 'en', 'You are browsing with Microsoft Internet Explorer 6.<br />Your browser is old, way too easy for virus makers, and it doesn''t know the standards which are the basics of the World Wide Web.<br />More, this web portal has not been written trying to fix the bugs of your browser.<br />A simple solution might be for you to <a href="http://www.microsoft.com/windows/downloads/ie/getitnow.mspx">get version 7 or newer</a>.<br />You might also like to use a different browser instead.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DISCLAIMER_NOTE', 'it', 'Stai utilizzando Microsoft Internet Explorer 6.<br />Il tuo browser è vecchio, una pacchia per i creatori di virus informatici, e irrispettoso degli standard che sono alla base del World Wide Web.<br />Inoltre questo portale non è stato sviluppato nel tentativo di risolvere i problemi del tuo browser.<br />Una soluzione facile per te, sarebbe quella di <a href="http://www.microsoft.com/windows/downloads/ie/getitnow.mspx">aggiornare il tuo browser alla versione 7 o successive</a>.<br />Oppure potresti decidere di utilizzare un altro browser.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH', 'en', 'Search');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH', 'it', 'Cerca');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('YOU_ARE_HERE', 'en', 'You are here');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('YOU_ARE_HERE', 'it', 'Sei qui');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USERNAME', 'en', 'username');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USERNAME', 'it', 'utente');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('WELCOME', 'en', 'Welcome');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('WELCOME', 'it', 'Benvenuto/a');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_ACCESS_LAST', 'en', 'Last login');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_ACCESS_LAST', 'it', 'Ultimo accesso');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_CREATION', 'en', 'Registered');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_CREATION', 'it', 'Registrato');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_PASSWORD_CHANGE_LAST', 'en', 'Last password change');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_PASSWORD_CHANGE_LAST', 'it', 'Ultimo rinnovo password');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LOGOUT', 'en', 'Exit');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LOGOUT', 'it', 'Esci');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION', 'en', 'Administration');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION', 'it', 'Gestisci');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_STATUS_EXPIRED', 'en', 'Expired account');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_STATUS_EXPIRED', 'it', 'Utenza scaduta');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_STATUS_CREDENTIALS_INVALID', 'en', 'Invalid credentials.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_STATUS_CREDENTIALS_INVALID', 'it', 'Username o password non corretti.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_RESULTS', 'en', 'Search Result');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_RESULTS', 'it', 'Risultati della Ricerca');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCHED_FOR', 'en', 'You searched for');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCHED_FOR', 'it', 'Hai cercato');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_RESULTS_INTRO', 'en', 'Found');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_RESULTS_INTRO', 'it', 'Sono stati trovati');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_RESULTS_OUTRO', 'en', 'matchings');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_RESULTS_OUTRO', 'it', 'risultati');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LINKS', 'en', 'Links');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LINKS', 'it', 'Riferimenti');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LATEST_NEW', 'en', 'Latest News');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LATEST_NEW', 'it', 'Ultime Notizie');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NEWS_ARCHIVE', 'en', 'Archive News');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NEWS_ARCHIVE', 'it', 'Archivio Notizie');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('RESERVED_AREA', 'en', 'Reserved area');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('RESERVED_AREA', 'it', 'Area riservata');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DOWNLOAD_THIS', 'en', 'Download this');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DOWNLOAD_THIS', 'it', 'Scarica');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SKIP_ALL', 'en', 'Go to Contents');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SKIP_ALL', 'it', 'Salta ai Contenuti');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('MENU_NAVIGATION', 'en', 'Navigation menù');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('MENU_NAVIGATION', 'it', 'Menù di navigazione');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LANGUAGE', 'en', 'Language');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LANGUAGE', 'it', 'Lingua');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_ENGINE', 'en', 'Search Engine');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_ENGINE', 'it', 'Ricerca');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CONTENTS', 'en', 'Contents');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CONTENTS', 'it', 'Contenuti');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LOGIN', 'en', 'Login');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LOGIN', 'it', 'Login');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LATEST_NEWS', 'en', 'Latest News');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LATEST_NEWS', 'it', 'Ultime Notizie');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('BACK_TO_THE_TOP', 'en', 'Back to the top');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('BACK_TO_THE_TOP', 'it', 'Torna all''inizio');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SKIP', 'en', 'Skip');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SKIP', 'it', 'Salta');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ALLA', 'en', 'at the');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ALLA', 'it', 'alla');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('AL', 'en', 'at the');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('AL', 'it', 'al');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('AI', 'en', 'at the');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('AI', 'it', 'ai');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ALLE', 'en', 'at the');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ALLE', 'it', 'alle');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SERVICES', 'en', 'The following services are available on this page');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SERVICES', 'it', 'In questa pagina sono disponibili');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CATEGORIES', 'en', 'Categories');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CATEGORIES', 'it', 'Categorie');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_HOLDER', 'en', 'Holder');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_HOLDER', 'it', 'Titolare');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_CARDS', 'en', 'Search Cards');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_CARDS', 'it', 'Cerca Scheda');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LABEL_PAGE', 'en', 'Page');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LABEL_PAGE', 'it', 'Pagina');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARDS_NUMBER', 'en', 'Number Cards');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARDS_NUMBER', 'it', 'Numero Schede');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PREV', 'en', 'Previous');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PREV', 'it', 'Precedenti');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NEXT', 'en', 'Next');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NEXT', 'it', 'Successivi');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('EDIT', 'en', 'Edit');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('EDIT', 'it', 'Modifica');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('VIEW_CARD', 'en', 'Details');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('VIEW_CARD', 'it', 'Dettagli');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_NOTE', 'en', 'Note');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_NOTE', 'it', 'Note');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('BACK_TO_CARDS_LIST', 'en', 'Returned to the list');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('BACK_TO_CARDS_LIST', 'it', 'Torna alla lista');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PASSWORD', 'en', 'password');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PASSWORD', 'it', 'password');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ATTACHES', 'en', 'Attachments');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ATTACHES', 'it', 'Allegati');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_NOT_FOUND', 'en', 'Page not found');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_NOT_FOUND', 'it', 'Pagina non trovata');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('GENERIC_ERROR', 'en', 'Generic Error');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('GENERIC_ERROR', 'it', 'Errore Generico');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CNG_Image2_OgnlErrorMessage', 'en', 'Image 2 can be inserted if Image 1 is valued');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CNG_Image2_OgnlErrorMessage', 'it', 'L''immagine 2 può essere inserita se presente immagine 1');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('MAIN_TITLE', 'en', 'Villamarina Municipality');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('MAIN_TITLE', 'it', 'Comune di Villamarina');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_DESCRIPTION', 'en', 'Area Pass');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_DESCRIPTION', 'it', 'Zona Pass');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_CREATION_DATE', 'en', 'Release Date');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_CREATION_DATE', 'it', 'Data Rilascio');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_NOT_ALLOWED', 'it', 'Utente non autorizzato');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_NOT_ALLOWED', 'en', 'User not allowed');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_NOTHING_FOUND', 'en', 'Nothing found.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_NOTHING_FOUND', 'it', 'Non è stato trovato alcun risultato');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION_BASIC', 'it', 'Normale');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION_BASIC', 'en', 'Normal');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION_MINT', 'it', 'Avanzata');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION_MINT', 'en', 'Advanced');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION_BASIC_GOTO', 'it', 'Accedi con client normale');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION_BASIC_GOTO', 'en', 'Go to the administration with normal client');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION_MINT_GOTO', 'it', 'Accedi con client avanzato');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION_MINT_GOTO', 'en', 'Go to the administration with advanced client');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_DETAILS', 'en', 'Page Details');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_DETAILS', 'it', 'Dettagli della Pagina');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('EDIT_THIS_PAGE', 'en', 'Manage this Page');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('EDIT_THIS_PAGE', 'it', 'Gestione Pagina');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DATE_FROM', 'en', 'From');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DATE_FROM', 'it', 'Da');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DATE_TO', 'en', 'To');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DATE_TO', 'it', 'A');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('TEXT', 'en', 'Text');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('TEXT', 'it', 'Testo');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ALL', 'en', 'All');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ALL', 'it', 'Tutte');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NUMBER_FROM', 'en', 'From');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NUMBER_FROM', 'it', 'Da');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NUMBER_TO', 'en', 'To');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NUMBER_TO', 'it', 'A');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('EDIT_THIS_CONTENT', 'en', 'Edit this Content');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('EDIT_THIS_CONTENT', 'it', 'Modifica il Contenuto');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_FOR', 'en', 'Search for');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_FOR', 'it', 'Cerca per');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('YES', 'en', 'Yes');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('YES', 'it', 'Si');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NO', 'en', 'No');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NO', 'it', 'No');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('BOTH', 'en', 'Both');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('BOTH', 'it', 'Entrambi');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('IGNORE', 'en', 'Ignore this field');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('IGNORE', 'it', 'Ignora questo campo');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CATEGORY', 'en', 'Category');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CATEGORY', 'it', 'Categoria');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ERRORS', 'en', 'Errors');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ERRORS', 'it', 'Errori');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LIST_VIEWER_EMPTY', 'en', 'No results found. Check your search filters.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LIST_VIEWER_EMPTY', 'it', 'Nessun risultato trovato. Controlla i tuoi filtri di ricerca.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('END', 'en', 'To');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('END', 'it', 'Fino a');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('START', 'en', 'From');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('START', 'it', 'Da');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_INVALID_FORMAT', 'en', 'has a format that is not valid.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_INVALID_FORMAT', 'it', 'ha un formato che risulta non valido.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_INVALID_RANGE', 'en', 'has a value not consistent. Check and start a new search.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_INVALID_RANGE', 'it', 'ha un valore non coerente. Ricontrolla ed effettua una nuova ricerca.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_FIELD', 'en', 'The field');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_FIELD', 'it', 'Il campo');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('COPYRIGHT', 'en', '<span lang="en">Copyright &copy; Entando srl 2012</span>');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('COPYRIGHT', 'it', '<span lang="en">Copyright &copy; Entando srl 2012</span>');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CREDITS_POWERED_BY', 'en', '<span lang="en">Powered by </span><a href="http://www.entando.com/"><span lang="en">Entando 3.0</span></a>');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CREDITS_POWERED_BY', 'it', '<span lang="en">Powered by </span><a href="http://www.entando.com/"><span lang="en">Entando 3.0</span></a>');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LATEST_ANNOUNCEMENTS', 'en', 'Latest Announcements');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LATEST_ANNOUNCEMENTS', 'it', 'Ultimi Bandi');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('GO_TO_PAGE', 'en', 'Go to page');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('GO_TO_PAGE', 'it', 'Vai alla pagina');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LATEST_DECISIONS', 'en', 'Latest Decisions');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LATEST_DECISIONS', 'it', 'Ultime Delibere');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCES', 'it', 'Risorse API');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCES', 'en', 'API Resources');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_ERROR', 'it', 'Errore');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_ERROR', 'en', 'Errors');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE', 'it', 'Risorsa');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE', 'en', 'Resource');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_DESCRIPTION', 'it', 'Descrizione');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_DESCRIPTION', 'en', 'Description');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_GOTO_DETAILS', 'it', 'Vai al dettaglio');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_GOTO_DETAILS', 'en', 'Go to details');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_OFF', 'it', 'Non Attivo');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_OFF', 'en', 'Not Active');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_FREE', 'it', 'Attivo, Accesso Libero');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_FREE', 'en', 'Active, Free Access');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_AUTH', 'it', 'Attivo, Utenti Registrati');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_AUTH', 'en', 'Active, Registered Users');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_LOCK', 'it', 'Metodo Attivo, Utenti Registrati con Autorizzazione');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_LOCK', 'en', 'Active, Registered Users with Permission');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_NA', 'it', 'Metodo Non Disponibile');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_NA', 'en', 'Method Not Available');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_NO_RESOURCES', 'it', 'Non ci sono Risorse API disponibili.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_NO_RESOURCES', 'en', 'No API Resources available at the moment.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_TABLE_SUMMARY', 'it', 'La tabella elenaca le Risorse API disponibile nel sistema. Nome della risorsa, la sua descrizione e lo stato di ciascun metodo.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_TABLE_SUMMARY', 'en', 'The table lists the API Resources available in the system. Method name, description, group and the status of each method.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE_NAME', 'it', 'Nome');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE_NAME', 'en', 'Name');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE_NAMESPACE', 'it', 'Namespace');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE_NAMESPACE', 'en', 'Namespace');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE_SOURCE', 'it', 'Sorgente');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE_SOURCE', 'en', 'Source');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE_URI', 'it', 'URI');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE_URI', 'en', 'URI');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_EXTENSION', 'it', 'Estensione');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_EXTENSION', 'en', 'Extension');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_EXTENSION_NOTE', 'it', '''.xml'' per la risposta in formato xml e ''.json'' per la risposta in formato json.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_EXTENSION_NOTE', 'en', '''.xml'' for response in xml format and ''.json'' for json.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_KO', 'it', 'Non disponibile');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_KO', 'en', 'Not available');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD', 'it', 'Metodo');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD', 'en', 'Method');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_OK', 'it', 'Disponibile');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_OK', 'en', 'Available');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTHORIZATION', 'it', 'Autorizzazione');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTHORIZATION', 'en', 'Authorization');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_FREE', 'it', 'Nessuna, questo metodo è pubblico');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_FREE', 'en', 'None, this method is public');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_WITH_PERM', 'it', 'Utenti registrati con permesso');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_WITH_PERM', 'en', 'Registered users with permission');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_SIMPLE', 'it', 'Utenti registrati');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_SIMPLE', 'en', 'Registered users');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_SCHEMAS', 'it', 'Schema XML');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_SCHEMAS', 'en', 'XML Schemas');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_SCHEMA_REQ', 'it', 'Richiesta');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_SCHEMA_REQ', 'en', 'Request');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_SCHEMA_RESP', 'it', 'Risposta');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_SCHEMA_RESP', 'en', 'Response');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_PARAMS_SUMM', 'it', 'Questa tabella mostra i parametri per la richiesta del metodo. Per ciascuno di essi ci sono tre colonne: il nome del parametro, la descrizione del parametro e l''indicazione di obbligatorietà.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_PARAMS_SUMM', 'en', 'This table shows the request parameters for this method. For each of them there are three columns: the parameter name, the parameter description and whether if it''s mandatory or not.');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_REQUEST_PARAMS', 'it', 'Parametri');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_REQUEST_PARAMS', 'en', 'Parameters');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_PARAM_NAME', 'it', 'Nome');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_PARAM_NAME', 'en', 'Name');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_PARAM_DESCRIPTION', 'it', 'Descrizione');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_PARAM_DESCRIPTION', 'en', 'Description');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_PARAM_REQUIRED', 'it', 'Obbligatorio');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_PARAM_REQUIRED', 'en', 'Mandatory');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_GOTO_LIST', 'it', 'Lista delle Risorse API');
-INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_GOTO_LIST', 'en', 'API Resource List');
-
-
---
--- TOC entry 1829 (class 0 OID 17417307)
+-- TOC entry 1829 (class 0 OID 874661)
 -- Dependencies: 1509
 -- Data for Name: pagemodels; Type: TABLE DATA; Schema: public; Owner: agile
 --
@@ -1588,8 +1249,8 @@ INSERT INTO pagemodels (code, descr, frames, plugincode) VALUES ('home', 'Home P
 
 
 --
--- TOC entry 1830 (class 0 OID 17417313)
--- Dependencies: 1510
+-- TOC entry 1830 (class 0 OID 874667)
+-- Dependencies: 1510 1829
 -- Data for Name: pages; Type: TABLE DATA; Schema: public; Owner: agile
 --
 
@@ -1956,16 +1617,9 @@ INSERT INTO pages (code, parentcode, pos, modelcode, titles, groupcode, showinme
 
 ');
 
---
--- TOC entry 1831 (class 0 OID 17417319)
--- Dependencies: 1511
--- Data for Name: resourcerelations; Type: TABLE DATA; Schema: public; Owner: agile
---
-
-
 
 --
--- TOC entry 1832 (class 0 OID 17417322)
+-- TOC entry 1832 (class 0 OID 874676)
 -- Dependencies: 1512
 -- Data for Name: resources; Type: TABLE DATA; Schema: public; Owner: agile
 --
@@ -2034,9 +1688,10 @@ INSERT INTO resources (resid, restype, descr, maingroup, resourcexml, masterfile
 <resource typecode="Image" id="174"><descr>Portal</descr><groups mainGroup="free" /><categories /><masterfile>Portal.jpg</masterfile><instance><size>3</size><filename>Portal_d3.jpg</filename><mimetype>image/jpeg</mimetype><weight>3 Kb</weight></instance><instance><size>2</size><filename>Portal_d2.jpg</filename><mimetype>image/jpeg</mimetype><weight>3 Kb</weight></instance><instance><size>1</size><filename>Portal_d1.jpg</filename><mimetype>image/jpeg</mimetype><weight>2 Kb</weight></instance><instance><size>0</size><filename>Portal_d0.jpg</filename><mimetype>image/jpeg</mimetype><weight>1791 Kb</weight></instance><instance><size>4</size><filename>Portal_d4.jpg</filename><mimetype>image/jpeg</mimetype><weight>14 Kb</weight></instance></resource>
 ', 'Portal.jpg');
 
+
 --
--- TOC entry 1825 (class 0 OID 17417289)
--- Dependencies: 1505
+-- TOC entry 1825 (class 0 OID 874643)
+-- Dependencies: 1505 1826 1823 1826 1830 1832
 -- Data for Name: contentrelations; Type: TABLE DATA; Schema: public; Owner: agile
 --
 
@@ -2137,7 +1792,356 @@ INSERT INTO contentrelations (contentid, refpage, refcontent, refresource, refca
 
 
 --
--- TOC entry 1833 (class 0 OID 17417328)
+-- TOC entry 1827 (class 0 OID 874652)
+-- Dependencies: 1507 1826
+-- Data for Name: contentsearch; Type: TABLE DATA; Schema: public; Owner: agile
+--
+
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG16', 'Title', 'Internal Servlet', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG16', 'Title', 'Internal Servlet', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG15', 'Title', 'Application Service Example', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG15', 'Title', 'Esempio Servizio Applicativo', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW177', 'Date', NULL, '2011-06-15', NULL, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW177', 'Title', 'Online the Mobile Portal', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW177', 'Title', 'Online il Portale Mobile', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW3', 'Date', NULL, '2011-11-21', NULL, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW3', 'Title', 'Online the Portal of Villamarina Municipality', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW3', 'Title', 'Online il Portale del Comune di Villamarina', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG146', 'Title', 'ePartecipation', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG146', 'Title', 'ePartecipation', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG51', 'Title', 'Mobile Area', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG51', 'Title', 'Area Mobile', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG20', 'Title', 'Statute', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG20', 'Title', 'Statuto', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL46', 'Title', 'Tax - Request ICI refund', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL46', 'Title', 'Tributi - Richiesta rimborso ICI', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG19', 'Title', 'Municipal Council', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG19', 'Title', 'Consiglio Comunale', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL7', 'Title', 'Residence Self-certification Form', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL7', 'Title', 'Modulo Autocertificazione Residenza', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL44', 'Title', 'Civil Status Self Certification Form', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL44', 'Title', 'Modulo Autocertificazione Stato Civile', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW23', 'Date', NULL, '2011-10-21', NULL, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW23', 'Title', 'Ground Rent Contribution', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW23', 'Title', 'Contributo canone di locazione 2011', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG54', 'Title', 'Decisions', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG54', 'Title', 'Delibere', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG55', 'Title', 'Announcements', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG55', 'Title', 'Bandi', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG53', 'Title', 'News', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG53', 'Title', 'Notizie', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG28', 'Title', 'Municipal Decisions available in the portal', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG28', 'Title', 'Elenco delle Delibere di Giunta presenti nel portale del Comune', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG17', 'Title', 'Mayor', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG17', 'Title', 'Sindaco', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG49', 'Title', 'Public Relations Office', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG49', 'Title', 'URP - Ufficio Relazioni con il Pubblico', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG11', 'Title', 'Announcements Archive', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG11', 'Title', 'Archivio Bandi', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG12', 'Title', 'News Archive', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG12', 'Title', 'Archivio Notizie', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG13', 'Title', 'Decisions Archive', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG13', 'Title', 'Archivio Delibere', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL42', 'Title', 'Registry - Request Identity Card valid for foreign travel', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('SDL42', 'Title', 'Anagrafe - Richiesta Carta Identità valida per espatrio', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('BND39', 'StartDate', NULL, '2012-05-01', NULL, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('BND39', 'EndDate', NULL, '2012-11-30', NULL, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('BND48', 'StartDate', NULL, '2013-02-28', NULL, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('BND48', 'EndDate', NULL, '2013-10-27', NULL, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('BND5', 'StartDate', NULL, '2013-03-03', NULL, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('BND5', 'EndDate', NULL, '2013-11-14', NULL, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLB4', 'Number', NULL, NULL, 133, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLB4', 'Date', NULL, '2011-09-20', NULL, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLB30', 'Number', NULL, NULL, 20, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLB30', 'Date', NULL, '2011-10-04', NULL, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLB32', 'Number', NULL, NULL, 120, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLB32', 'Date', NULL, '2011-07-01', NULL, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLB36', 'Number', NULL, NULL, 15, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('DLB36', 'Date', NULL, '2011-07-16', NULL, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG256', 'Title', 'How to sign in', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG256', 'Title', 'Come loggarsi', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG18', 'Title', 'Council', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG18', 'Title', 'Giunta Comunale', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW27', 'Date', NULL, '2011-07-20', NULL, NULL);
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW27', 'Title', 'Folk Music Festival', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('NEW27', 'Title', 'Festival della canzone popolare', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG173', 'Title', 'Web Accessibility', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG173', 'Title', 'Accessibilità', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG29', 'Title', 'Elenco delle Delibere di Consiglio presenti nel portale del Comune', NULL, NULL, 'it');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG14', 'Title', 'Documents Archive', NULL, NULL, 'en');
+INSERT INTO contentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG14', 'Title', 'Archivio Modulistica', NULL, NULL, 'it');
+
+
+--
+-- TOC entry 1828 (class 0 OID 874655)
+-- Dependencies: 1508
+-- Data for Name: localstrings; Type: TABLE DATA; Schema: public; Owner: agile
+--
+
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE', 'en', 'page');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE', 'it', 'pagina');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_MODEL', 'en', 'page model');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_MODEL', 'it', 'modello pagina');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_TITLE', 'en', 'page title');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_TITLE', 'it', 'titolo pagina');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('MAIN_SUBTITLE', 'en', 'Official Site');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('MAIN_SUBTITLE', 'it', 'Sito Istituzionale');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DISCLAIMER', 'en', 'Warning!');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DISCLAIMER', 'it', 'Attenzione!');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DISCLAIMER_NOTE', 'en', 'You are browsing with Microsoft Internet Explorer 6.<br />Your browser is old, way too easy for virus makers, and it doesn''t know the standards which are the basics of the World Wide Web.<br />More, this web portal has not been written trying to fix the bugs of your browser.<br />A simple solution might be for you to <a href="http://www.microsoft.com/windows/downloads/ie/getitnow.mspx">get version 7 or newer</a>.<br />You might also like to use a different browser instead.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DISCLAIMER_NOTE', 'it', 'Stai utilizzando Microsoft Internet Explorer 6.<br />Il tuo browser è vecchio, una pacchia per i creatori di virus informatici, e irrispettoso degli standard che sono alla base del World Wide Web.<br />Inoltre questo portale non è stato sviluppato nel tentativo di risolvere i problemi del tuo browser.<br />Una soluzione facile per te, sarebbe quella di <a href="http://www.microsoft.com/windows/downloads/ie/getitnow.mspx">aggiornare il tuo browser alla versione 7 o successive</a>.<br />Oppure potresti decidere di utilizzare un altro browser.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH', 'en', 'Search');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH', 'it', 'Cerca');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('YOU_ARE_HERE', 'en', 'You are here');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('YOU_ARE_HERE', 'it', 'Sei qui');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USERNAME', 'en', 'username');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USERNAME', 'it', 'utente');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('WELCOME', 'en', 'Welcome');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('WELCOME', 'it', 'Benvenuto/a');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_ACCESS_LAST', 'en', 'Last login');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_ACCESS_LAST', 'it', 'Ultimo accesso');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_CREATION', 'en', 'Registered');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_CREATION', 'it', 'Registrato');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_PASSWORD_CHANGE_LAST', 'en', 'Last password change');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_DATE_PASSWORD_CHANGE_LAST', 'it', 'Ultimo rinnovo password');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LOGOUT', 'en', 'Exit');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LOGOUT', 'it', 'Esci');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION', 'en', 'Administration');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION', 'it', 'Gestisci');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_STATUS_EXPIRED', 'en', 'Expired account');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_STATUS_EXPIRED', 'it', 'Utenza scaduta');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_STATUS_CREDENTIALS_INVALID', 'en', 'Invalid credentials.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_STATUS_CREDENTIALS_INVALID', 'it', 'Username o password non corretti.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_RESULTS', 'en', 'Search Result');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_RESULTS', 'it', 'Risultati della Ricerca');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCHED_FOR', 'en', 'You searched for');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCHED_FOR', 'it', 'Hai cercato');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_RESULTS_INTRO', 'en', 'Found');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_RESULTS_INTRO', 'it', 'Sono stati trovati');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_RESULTS_OUTRO', 'en', 'matchings');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_RESULTS_OUTRO', 'it', 'risultati');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LINKS', 'en', 'Links');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LINKS', 'it', 'Riferimenti');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LATEST_NEW', 'en', 'Latest News');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LATEST_NEW', 'it', 'Ultime Notizie');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NEWS_ARCHIVE', 'en', 'Archive News');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NEWS_ARCHIVE', 'it', 'Archivio Notizie');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('RESERVED_AREA', 'en', 'Reserved area');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('RESERVED_AREA', 'it', 'Area riservata');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DOWNLOAD_THIS', 'en', 'Download this');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DOWNLOAD_THIS', 'it', 'Scarica');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SKIP_ALL', 'en', 'Go to Contents');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SKIP_ALL', 'it', 'Salta ai Contenuti');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('MENU_NAVIGATION', 'en', 'Navigation menù');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('MENU_NAVIGATION', 'it', 'Menù di navigazione');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LANGUAGE', 'en', 'Language');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LANGUAGE', 'it', 'Lingua');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_ENGINE', 'en', 'Search Engine');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_ENGINE', 'it', 'Ricerca');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CONTENTS', 'en', 'Contents');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CONTENTS', 'it', 'Contenuti');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LOGIN', 'en', 'Login');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LOGIN', 'it', 'Login');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LATEST_NEWS', 'en', 'Latest News');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LATEST_NEWS', 'it', 'Ultime Notizie');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('BACK_TO_THE_TOP', 'en', 'Back to the top');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('BACK_TO_THE_TOP', 'it', 'Torna all''inizio');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SKIP', 'en', 'Skip');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SKIP', 'it', 'Salta');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ALLA', 'en', 'at the');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ALLA', 'it', 'alla');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('AL', 'en', 'at the');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('AL', 'it', 'al');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('AI', 'en', 'at the');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('AI', 'it', 'ai');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ALLE', 'en', 'at the');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ALLE', 'it', 'alle');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SERVICES', 'en', 'The following services are available on this page');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SERVICES', 'it', 'In questa pagina sono disponibili');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CATEGORIES', 'en', 'Categories');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CATEGORIES', 'it', 'Categorie');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_HOLDER', 'en', 'Holder');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_HOLDER', 'it', 'Titolare');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_CARDS', 'en', 'Search Cards');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_CARDS', 'it', 'Cerca Scheda');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LABEL_PAGE', 'en', 'Page');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LABEL_PAGE', 'it', 'Pagina');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARDS_NUMBER', 'en', 'Number Cards');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARDS_NUMBER', 'it', 'Numero Schede');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PREV', 'en', 'Previous');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PREV', 'it', 'Precedenti');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NEXT', 'en', 'Next');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NEXT', 'it', 'Successivi');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('EDIT', 'en', 'Edit');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('EDIT', 'it', 'Modifica');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('VIEW_CARD', 'en', 'Details');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('VIEW_CARD', 'it', 'Dettagli');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_NOTE', 'en', 'Note');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_NOTE', 'it', 'Note');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('BACK_TO_CARDS_LIST', 'en', 'Returned to the list');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('BACK_TO_CARDS_LIST', 'it', 'Torna alla lista');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PASSWORD', 'en', 'password');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PASSWORD', 'it', 'password');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ATTACHES', 'en', 'Attachments');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ATTACHES', 'it', 'Allegati');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_NOT_FOUND', 'en', 'Page not found');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_NOT_FOUND', 'it', 'Pagina non trovata');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('GENERIC_ERROR', 'en', 'Generic Error');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('GENERIC_ERROR', 'it', 'Errore Generico');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CNG_Image2_OgnlErrorMessage', 'en', 'Image 2 can be inserted if Image 1 is valued');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CNG_Image2_OgnlErrorMessage', 'it', 'L''immagine 2 può essere inserita se presente immagine 1');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('MAIN_TITLE', 'en', 'Villamarina Municipality');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('MAIN_TITLE', 'it', 'Comune di Villamarina');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_DESCRIPTION', 'en', 'Area Pass');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_DESCRIPTION', 'it', 'Zona Pass');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_CREATION_DATE', 'en', 'Release Date');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CARD_CREATION_DATE', 'it', 'Data Rilascio');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_NOT_ALLOWED', 'it', 'Utente non autorizzato');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('USER_NOT_ALLOWED', 'en', 'User not allowed');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_NOTHING_FOUND', 'en', 'Nothing found.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_NOTHING_FOUND', 'it', 'Non è stato trovato alcun risultato');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION_BASIC', 'it', 'Normale');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION_BASIC', 'en', 'Normal');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION_MINT', 'it', 'Avanzata');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION_MINT', 'en', 'Advanced');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION_BASIC_GOTO', 'it', 'Accedi con client normale');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION_BASIC_GOTO', 'en', 'Go to the administration with normal client');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION_MINT_GOTO', 'it', 'Accedi con client avanzato');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ADMINISTRATION_MINT_GOTO', 'en', 'Go to the administration with advanced client');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_DETAILS', 'en', 'Page Details');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('PAGE_DETAILS', 'it', 'Dettagli della Pagina');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('EDIT_THIS_PAGE', 'en', 'Manage this Page');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('EDIT_THIS_PAGE', 'it', 'Gestione Pagina');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DATE_FROM', 'en', 'From');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DATE_FROM', 'it', 'Da');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DATE_TO', 'en', 'To');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('DATE_TO', 'it', 'A');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('TEXT', 'en', 'Text');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('TEXT', 'it', 'Testo');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ALL', 'en', 'All');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ALL', 'it', 'Tutte');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NUMBER_FROM', 'en', 'From');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NUMBER_FROM', 'it', 'Da');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NUMBER_TO', 'en', 'To');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NUMBER_TO', 'it', 'A');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('EDIT_THIS_CONTENT', 'en', 'Edit this Content');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('EDIT_THIS_CONTENT', 'it', 'Modifica il Contenuto');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_FOR', 'en', 'Search for');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('SEARCH_FOR', 'it', 'Cerca per');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('YES', 'en', 'Yes');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('YES', 'it', 'Si');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NO', 'en', 'No');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('NO', 'it', 'No');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('BOTH', 'en', 'Both');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('BOTH', 'it', 'Entrambi');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('IGNORE', 'en', 'Ignore this field');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('IGNORE', 'it', 'Ignora questo campo');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CATEGORY', 'en', 'Category');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CATEGORY', 'it', 'Categoria');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ERRORS', 'en', 'Errors');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ERRORS', 'it', 'Errori');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LIST_VIEWER_EMPTY', 'en', 'No results found. Check your search filters.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LIST_VIEWER_EMPTY', 'it', 'Nessun risultato trovato. Controlla i tuoi filtri di ricerca.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('END', 'en', 'To');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('END', 'it', 'Fino a');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('START', 'en', 'From');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('START', 'it', 'Da');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_INVALID_FORMAT', 'en', 'has a format that is not valid.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_INVALID_FORMAT', 'it', 'ha un formato che risulta non valido.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_INVALID_RANGE', 'en', 'has a value not consistent. Check and start a new search.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_INVALID_RANGE', 'it', 'ha un valore non coerente. Ricontrolla ed effettua una nuova ricerca.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_FIELD', 'en', 'The field');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('jacms_LIST_VIEWER_FIELD', 'it', 'Il campo');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('COPYRIGHT', 'en', '<span lang="en">Copyright &copy; Entando srl 2012</span>');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('COPYRIGHT', 'it', '<span lang="en">Copyright &copy; Entando srl 2012</span>');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CREDITS_POWERED_BY', 'en', '<span lang="en">Powered by </span><a href="http://www.entando.com/"><span lang="en">Entando 3.0</span></a>');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('CREDITS_POWERED_BY', 'it', '<span lang="en">Powered by </span><a href="http://www.entando.com/"><span lang="en">Entando 3.0</span></a>');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LATEST_ANNOUNCEMENTS', 'en', 'Latest Announcements');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LATEST_ANNOUNCEMENTS', 'it', 'Ultimi Bandi');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('GO_TO_PAGE', 'en', 'Go to page');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('GO_TO_PAGE', 'it', 'Vai alla pagina');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LATEST_DECISIONS', 'en', 'Latest Decisions');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('LATEST_DECISIONS', 'it', 'Ultime Delibere');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCES', 'it', 'Risorse API');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCES', 'en', 'API Resources');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_ERROR', 'it', 'Errore');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_ERROR', 'en', 'Errors');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE', 'it', 'Risorsa');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE', 'en', 'Resource');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_DESCRIPTION', 'it', 'Descrizione');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_DESCRIPTION', 'en', 'Description');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_GOTO_DETAILS', 'it', 'Vai al dettaglio');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_GOTO_DETAILS', 'en', 'Go to details');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_OFF', 'it', 'Non Attivo');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_OFF', 'en', 'Not Active');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_FREE', 'it', 'Attivo, Accesso Libero');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_FREE', 'en', 'Active, Free Access');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_AUTH', 'it', 'Attivo, Utenti Registrati');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_AUTH', 'en', 'Active, Registered Users');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_LOCK', 'it', 'Metodo Attivo, Utenti Registrati con Autorizzazione');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_LOCK', 'en', 'Active, Registered Users with Permission');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_NA', 'it', 'Metodo Non Disponibile');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_STATUS_NA', 'en', 'Method Not Available');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_NO_RESOURCES', 'it', 'Non ci sono Risorse API disponibili.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_NO_RESOURCES', 'en', 'No API Resources available at the moment.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_TABLE_SUMMARY', 'it', 'La tabella elenaca le Risorse API disponibile nel sistema. Nome della risorsa, la sua descrizione e lo stato di ciascun metodo.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_TABLE_SUMMARY', 'en', 'The table lists the API Resources available in the system. Method name, description, group and the status of each method.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE_NAME', 'it', 'Nome');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE_NAME', 'en', 'Name');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE_NAMESPACE', 'it', 'Namespace');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE_NAMESPACE', 'en', 'Namespace');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE_SOURCE', 'it', 'Sorgente');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE_SOURCE', 'en', 'Source');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE_URI', 'it', 'URI');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_RESOURCE_URI', 'en', 'URI');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_EXTENSION', 'it', 'Estensione');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_EXTENSION', 'en', 'Extension');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_EXTENSION_NOTE', 'it', '''.xml'' per la risposta in formato xml e ''.json'' per la risposta in formato json.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_EXTENSION_NOTE', 'en', '''.xml'' for response in xml format and ''.json'' for json.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_KO', 'it', 'Non disponibile');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_KO', 'en', 'Not available');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD', 'it', 'Metodo');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD', 'en', 'Method');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_OK', 'it', 'Disponibile');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_OK', 'en', 'Available');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTHORIZATION', 'it', 'Autorizzazione');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTHORIZATION', 'en', 'Authorization');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_FREE', 'it', 'Nessuna, questo metodo è pubblico');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_FREE', 'en', 'None, this method is public');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_WITH_PERM', 'it', 'Utenti registrati con permesso');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_WITH_PERM', 'en', 'Registered users with permission');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_SIMPLE', 'it', 'Utenti registrati');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_AUTH_SIMPLE', 'en', 'Registered users');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_SCHEMAS', 'it', 'Schema XML');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_SCHEMAS', 'en', 'XML Schemas');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_SCHEMA_REQ', 'it', 'Richiesta');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_SCHEMA_REQ', 'en', 'Request');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_SCHEMA_RESP', 'it', 'Risposta');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_SCHEMA_RESP', 'en', 'Response');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_PARAMS_SUMM', 'it', 'Questa tabella mostra i parametri per la richiesta del metodo. Per ciascuno di essi ci sono tre colonne: il nome del parametro, la descrizione del parametro e l''indicazione di obbligatorietà.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_PARAMS_SUMM', 'en', 'This table shows the request parameters for this method. For each of them there are three columns: the parameter name, the parameter description and whether if it''s mandatory or not.');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_REQUEST_PARAMS', 'it', 'Parametri');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_METHOD_REQUEST_PARAMS', 'en', 'Parameters');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_PARAM_NAME', 'it', 'Nome');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_PARAM_NAME', 'en', 'Name');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_PARAM_DESCRIPTION', 'it', 'Descrizione');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_PARAM_DESCRIPTION', 'en', 'Description');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_PARAM_REQUIRED', 'it', 'Obbligatorio');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_PARAM_REQUIRED', 'en', 'Mandatory');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_GOTO_LIST', 'it', 'Lista delle Risorse API');
+INSERT INTO localstrings (keycode, langcode, stringvalue) VALUES ('ENTANDO_API_GOTO_LIST', 'en', 'API Resource List');
+
+
+--
+-- TOC entry 1831 (class 0 OID 874673)
+-- Dependencies: 1511 1823 1832
+-- Data for Name: resourcerelations; Type: TABLE DATA; Schema: public; Owner: agile
+--
+
+
+
+--
+-- TOC entry 1833 (class 0 OID 874682)
 -- Dependencies: 1513
 -- Data for Name: showletcatalog; Type: TABLE DATA; Schema: public; Owner: agile
 --
@@ -2265,8 +2269,8 @@ INSERT INTO showletcatalog (code, titles, parameters, plugincode, parenttypecode
 
 
 --
--- TOC entry 1834 (class 0 OID 17417334)
--- Dependencies: 1514
+-- TOC entry 1834 (class 0 OID 874688)
+-- Dependencies: 1514 1830 1833
 -- Data for Name: showletconfig; Type: TABLE DATA; Schema: public; Owner: agile
 --
 
@@ -2863,7 +2867,7 @@ INSERT INTO showletconfig (pagecode, framepos, showletcode, config, publishedcon
 
 
 --
--- TOC entry 1835 (class 0 OID 17417340)
+-- TOC entry 1835 (class 0 OID 874694)
 -- Dependencies: 1515
 -- Data for Name: sysconfig; Type: TABLE DATA; Schema: public; Owner: agile
 --
@@ -3081,7 +3085,7 @@ INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'subI
 
 
 --
--- TOC entry 1836 (class 0 OID 17417346)
+-- TOC entry 1836 (class 0 OID 874700)
 -- Dependencies: 1516
 -- Data for Name: uniquekeys; Type: TABLE DATA; Schema: public; Owner: agile
 --
@@ -3090,8 +3094,8 @@ INSERT INTO uniquekeys (id, keyvalue) VALUES (1, 260);
 
 
 --
--- TOC entry 1837 (class 0 OID 17417349)
--- Dependencies: 1517
+-- TOC entry 1837 (class 0 OID 874703)
+-- Dependencies: 1517 1826
 -- Data for Name: workcontentrelations; Type: TABLE DATA; Schema: public; Owner: agile
 --
 
@@ -3118,8 +3122,8 @@ INSERT INTO workcontentrelations (contentid, refcategory) VALUES ('DLB32', 'deli
 
 
 --
--- TOC entry 1838 (class 0 OID 17417352)
--- Dependencies: 1518
+-- TOC entry 1838 (class 0 OID 874706)
+-- Dependencies: 1518 1826
 -- Data for Name: workcontentsearch; Type: TABLE DATA; Schema: public; Owner: agile
 --
 
@@ -3198,7 +3202,7 @@ INSERT INTO workcontentsearch (contentid, attrname, textvalue, datevalue, numval
 INSERT INTO workcontentsearch (contentid, attrname, textvalue, datevalue, numvalue, langcode) VALUES ('CNG14', 'Title', 'Archivio Modulistica', NULL, NULL, 'it');
 
 
--- Completed on 2012-04-05 16:59:01 CEST
+-- Completed on 2012-06-11 16:18:14 CEST
 
 --
 -- PostgreSQL database dump complete
