@@ -44,6 +44,7 @@
 		<echo message="========================================================================" />
 		<exec executable="mvn" dir="${basedir}">
 			<env key="MAVEN_WORKING_MODE" value="production"/>
+			<arg line="-P !windows"/>
 			<arg value="package"/>
 			<arg line="-DskipTests"/>
 		</exec>
@@ -55,6 +56,7 @@
 		<echo message="========================================================================" />
 		<exec executable="mvn" dir="${basedir}">
 			<env key="MAVEN_WORKING_MODE" value="exewar"/>
+			<arg line="-P !windows"/>
 			<arg value="package"/>
 			<arg line="-DskipTests"/>
 			<arg line="-DskipDerby=false"/>
@@ -73,6 +75,28 @@
 	<!-- deploy the distribution -->
 	<target name="WAR-deploy" description="Copy the WAR to Tomcat">
 		<copy file="${dist.path}/${webappname}.war" todir="${tomcat.deploy.path}" />
+	</target>
+
+	<target name="PG-db-concat-one-table">
+		<echo message="|| ${fileToBeAppended} schema appended to ${db}" />
+		<concat destfile="${dist.path}/derby/sql/${webappname}${db}_schema.sql" append="true">
+		  <filelist dir="${dist.path}/derby/sql" files="${webappname}${db}_schema_${fileToBeAppended}.sql" />
+		</concat>
+
+		<echo message="|| ${fileToBeAppended} data appended to ${db}" />
+		<concat destfile="${dist.path}/derby/sql/${webappname}${db}_data.sql" append="true">
+		  <filelist dir="${dist.path}/derby/sql" files="${webappname}${db}_data_${fileToBeAppended}.sql" />
+		</concat>
+	</target>
+
+	<target name="PG-db-concat">
+		<foreach target="PG-db-concat-one-table" param="fileToBeAppended" list="${db.backup.tables.port}">
+			<param name="db" value="Port" />
+		</foreach>
+
+		<foreach target="PG-db-concat-one-table" param="fileToBeAppended" list="${db.backup.tables.serv}">
+			<param name="db" value="Serv" />
+		</foreach>
 	</target>
 
 	<target name="PG-db-backup-one-table">
