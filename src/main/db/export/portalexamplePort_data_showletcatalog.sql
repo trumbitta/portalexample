@@ -81,6 +81,47 @@ INSERT INTO showletcatalog (code, titles, parameters, plugincode, parenttypecode
 <property key="actionPath">/ExtStr2/do/Front/Api/Resource/list.action</property>
 </properties>
 ', 1, 'free');
+INSERT INTO showletcatalog (code, titles, parameters, plugincode, parenttypecode, defaultconfig, locked, maingroup) VALUES ('jptokenapi_myToken', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">My API Token</property>
+<property key="it">My API Token</property>
+</properties>', NULL, 'jptokenapi', NULL, NULL, 1, NULL);
+INSERT INTO showletcatalog (code, titles, parameters, plugincode, parenttypecode, defaultconfig, locked, maingroup) VALUES ('entando-showlet-language_choose', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Choose a Language</property>
+<property key="it">Choose a Language</property>
+</properties>', NULL, NULL, NULL, NULL, 1, NULL);
+INSERT INTO showletcatalog (code, titles, parameters, plugincode, parenttypecode, defaultconfig, locked, maingroup) VALUES ('entando-showlet-login_form', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Dropdown Sign In</property>
+<property key="it">Dropdown Sign In</property>
+</properties>', NULL, NULL, NULL, NULL, 1, NULL);
+INSERT INTO showletcatalog (code, titles, parameters, plugincode, parenttypecode, defaultconfig, locked, maingroup) VALUES ('entando-showlet-navigation_bar', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Navigation - Bar</property>
+<property key="it">Navigazione - Barra Orizzontale</property>
+</properties>', '<config>
+	<parameter name="navSpec">Rules for the Page List auto-generation</parameter>
+	<action name="navigatorConfig" />
+</config>', NULL, NULL, NULL, 1, NULL);
+INSERT INTO showletcatalog (code, titles, parameters, plugincode, parenttypecode, defaultconfig, locked, maingroup) VALUES ('entando-showlet-navigation_breadcrumbs', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Navigation - Breadcrumbs</property>
+<property key="it">Navigazione - Briciole di Pane</property>
+</properties>', NULL, NULL, NULL, NULL, 1, NULL);
+INSERT INTO showletcatalog (code, titles, parameters, plugincode, parenttypecode, defaultconfig, locked, maingroup) VALUES ('entando-showlet-navigation_menu', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Navigation - Vertical Menu</property>
+<property key="it">Navigazione - Menù Verticale</property>
+</properties>', '<config>
+	<parameter name="navSpec">Rules for the Page List auto-generation</parameter>
+	<action name="navigatorConfig" />
+</config>', NULL, NULL, NULL, 1, NULL);
+INSERT INTO showletcatalog (code, titles, parameters, plugincode, parenttypecode, defaultconfig, locked, maingroup) VALUES ('entando-showlet-search_form', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">Search Form</property>
+<property key="it">Search Form</property>
+</properties>', NULL, NULL, NULL, NULL, 1, NULL);
 
 
 --

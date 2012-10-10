@@ -12,10 +12,10 @@ SET escape_string_warning = off;
 SET search_path = public, pg_catalog;
 
 --
--- Data for Name: authusers; Type: TABLE DATA; Schema: public; Owner: -
+-- Data for Name: jptokenapi_usertokens; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO authusers (username, passwd, registrationdate, lastaccess, lastpasswordchange, active) VALUES ('admin', 'adminadmin', '2008-10-10', '2012-10-10', NULL, 1);
+INSERT INTO jptokenapi_usertokens (username, token) VALUES ('admin', '571c5cc66e2e2783d5f43edfe74f0f91');
 
 
 --
