@@ -167,14 +167,6 @@ $content.MainBody.text
   </ul>
 #end
 </article>', NULL);
-INSERT INTO contentmodels (modelid, contenttype, descr, model, stylesheet) VALUES (10021, 'CNG', 'Lists - Default', '<article>
-<p class="text-right"><time class="label" datetime="$content.Date.shortDate">$content.Date.getFormattedDate("EEEE dd MMMM yyyy")</time></p>
-<h2>$content.Title.text</h2>
-#if ( $content.Abstract.text != "" )
-  $content.Abstract.text
-#end
-<p class="text-right"><a class="btn" href="$content.contentLink">$i18n.getLabel("NWS_READ_MORE")</a></p>
-</article>', NULL);
 INSERT INTO contentmodels (modelid, contenttype, descr, model, stylesheet) VALUES (10004, 'RSL', 'Full - Default', '<article>
 <p class="text-right"><time class="label" datetime="$content.Date.shortDate">$content.Number.value &ndash; $content.Date.getFormattedDate("yyyy.MM.dd")</time></p>
 <h1>$content.Title.text</h1>
@@ -193,6 +185,14 @@ $content.Summary.text
 INSERT INTO contentmodels (modelid, contenttype, descr, model, stylesheet) VALUES (10041, 'RSL', 'Lists - Default', '<article>
 <h2><a href="$content.contentLink">$content.Number.value &ndash; $content.Date.getFormattedDate("yyyy.MM.dd")</a></h2>
 <p>$content.Title.text</p>
+</article>', NULL);
+INSERT INTO contentmodels (modelid, contenttype, descr, model, stylesheet) VALUES (10021, 'NWS', 'Lists - Default', '<article>
+<p class="text-right"><time class="label" datetime="$content.Date.shortDate">$content.Date.getFormattedDate("EEEE dd MMMM yyyy")</time></p>
+<h2>$content.Title.text</h2>
+#if ( $content.Abstract.text != "" )
+  $content.Abstract.text
+#end
+<p class="text-right"><a class="btn" href="$content.contentLink">$i18n.getLabel("NWS_READ_MORE")</a></p>
 </article>', NULL);
 
 
