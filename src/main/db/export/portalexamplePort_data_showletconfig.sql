@@ -81,6 +81,20 @@ INSERT INTO showletconfig (pagecode, framepos, showletcode, config, publishedcon
 </properties>
 
 ', NULL);
+INSERT INTO showletconfig (pagecode, framepos, showletcode, config, publishedcontent) VALUES ('homepage', 9, 'content_viewer_list', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="filters">(attributeFilter=true;order=DESC;key=Date)+(order=DESC;attributeFilter=true;key=Number)</property>
+<property key="title_it">Ultime Delibere</property>
+<property key="linkDescr_it">Archivio</property>
+<property key="pageLink">homepage</property>
+<property key="maxElemForItem">5</property>
+<property key="title_en">Latest Resolutions</property>
+<property key="contentType">RSL</property>
+<property key="modelId">10041</property>
+<property key="linkDescr_en">Archive</property>
+</properties>
+
+', NULL);
 
 
 --
