@@ -244,11 +244,15 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 ', 'free', '1.0', NULL);
 INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('CNG18', 'CNG', 'Welcome', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
 <content id="CNG18" typecode="CNG" typedescr="Generic Content"><descr>Welcome</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="en">Welcome!</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>
+	Entando Town is a demo portal built with Entando.</p>
+<p>
 	What are you waiting for?<br />
 	Try the Administration Area!</p>
 <p>
 	Find out how many things you can customize, create a new content, a new page or even your own user.</p>
 ]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>
+	Entando Town is a demo portal built with Entando.</p>
+<p>
 	What are you waiting for?<br />
 	Try the Administration Area!</p>
 <p>
@@ -260,14 +264,18 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 	Password: <strong>adminadmin</strong></p>
 <p>
 	Enjoy Entando!</p>
-]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Official plaque</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Entando Town has a very european look.</text></attribute><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Learn more »</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>2.0</version><lastEditor>admin</lastEditor><created>20121010173248</created><lastModified>20121010173823</lastModified></content>
-', '20121010173248', '20121010173824', '<?xml version="1.0" encoding="UTF-8"?>
+]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Official plaque</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Entando Town has a very european look.</text></attribute><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Learn more »</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>3.0</version><lastEditor>admin</lastEditor><created>20121010173248</created><lastModified>20121011111938</lastModified></content>
+', '20121010173248', '20121011111938', '<?xml version="1.0" encoding="UTF-8"?>
 <content id="CNG18" typecode="CNG" typedescr="Generic Content"><descr>Welcome</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="en">Welcome!</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>
+	Entando Town is a demo portal built with Entando.</p>
+<p>
 	What are you waiting for?<br />
 	Try the Administration Area!</p>
 <p>
 	Find out how many things you can customize, create a new content, a new page or even your own user.</p>
 ]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>
+	Entando Town is a demo portal built with Entando.</p>
+<p>
 	What are you waiting for?<br />
 	Try the Administration Area!</p>
 <p>
@@ -279,8 +287,8 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 	Password: <strong>adminadmin</strong></p>
 <p>
 	Enjoy Entando!</p>
-]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Official plaque</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Entando Town has a very european look.</text></attribute><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Learn more »</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>2.0</version><lastEditor>admin</lastEditor><created>20121010173248</created><lastModified>20121010173823</lastModified></content>
-', 'free', '2.0', 'admin');
+]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Official plaque</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Entando Town has a very european look.</text></attribute><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Learn more »</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>3.0</version><lastEditor>admin</lastEditor><created>20121010173248</created><lastModified>20121011111938</lastModified></content>
+', 'free', '3.0', 'admin');
 
 
 --
