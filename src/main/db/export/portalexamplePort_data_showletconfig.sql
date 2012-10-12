@@ -67,20 +67,6 @@ INSERT INTO showletconfig (pagecode, framepos, showletcode, config, publishedcon
 </properties>
 
 ', 'CNG18');
-INSERT INTO showletconfig (pagecode, framepos, showletcode, config, publishedcontent) VALUES ('homepage', 8, 'content_viewer_list', '<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="filters">(order=DESC;attributeFilter=true;key=StartDate)</property>
-<property key="title_it">Ultimi Bandi</property>
-<property key="linkDescr_it">Archive</property>
-<property key="pageLink">homepage</property>
-<property key="maxElemForItem">3</property>
-<property key="title_en">Latest Announcements</property>
-<property key="contentType">ANN</property>
-<property key="modelId">10051</property>
-<property key="linkDescr_en">Archive</property>
-</properties>
-
-', NULL);
 INSERT INTO showletconfig (pagecode, framepos, showletcode, config, publishedcontent) VALUES ('homepage', 9, 'content_viewer_list', '<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="filters">(attributeFilter=true;order=DESC;key=Date)+(order=DESC;attributeFilter=true;key=Number)</property>
@@ -92,6 +78,40 @@ INSERT INTO showletconfig (pagecode, framepos, showletcode, config, publishedcon
 <property key="contentType">RSL</property>
 <property key="modelId">10041</property>
 <property key="linkDescr_en">Archive</property>
+</properties>
+
+', NULL);
+INSERT INTO showletconfig (pagecode, framepos, showletcode, config, publishedcontent) VALUES ('homepage', 10, 'content_viewer_list', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="filters">(order=DESC;attributeFilter=true;key=Date)</property>
+<property key="title_it">Ultime Notizie</property>
+<property key="linkDescr_it">Archivio</property>
+<property key="pageLink">homepage</property>
+<property key="maxElemForItem">5</property>
+<property key="title_en">Latest News</property>
+<property key="contentType">NWS</property>
+<property key="modelId">10021</property>
+<property key="linkDescr_en">Archive</property>
+</properties>
+
+', NULL);
+INSERT INTO showletconfig (pagecode, framepos, showletcode, config, publishedcontent) VALUES ('homepage', 8, 'content_viewer_list', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="title_it">Ultimi Bandi</property>
+<property key="linkDescr_it">Archive</property>
+<property key="pageLink">homepage</property>
+<property key="filters">(order=DESC;attributeFilter=true;key=StartDate)</property>
+<property key="title_en">Latest Announcements</property>
+<property key="linkDescr_en">Archive</property>
+<property key="contentType">ANN</property>
+<property key="modelId">10051</property>
+</properties>
+
+', NULL);
+INSERT INTO showletconfig (pagecode, framepos, showletcode, config, publishedcontent) VALUES ('homepage', 11, 'content_viewer_list', '<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="contentType">CNG</property>
+<property key="modelId">10011</property>
 </properties>
 
 ', NULL);
