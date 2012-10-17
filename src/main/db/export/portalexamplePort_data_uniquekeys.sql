@@ -15,7 +15,7 @@ SET search_path = public, pg_catalog;
 -- Data for Name: uniquekeys; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO uniquekeys (id, keyvalue) VALUES (1, 18);
+INSERT INTO uniquekeys (id, keyvalue) VALUES (1, 24);
 
 
 --

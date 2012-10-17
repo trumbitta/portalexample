@@ -47,7 +47,6 @@ INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'lang
 </Langs>
 
 ');
-INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'subIndexDir', 'Name of the sub-directory containing content indexing files', 'index');
 INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'contentTypes', 'Definition of the Content Types', '<?xml version="1.0" encoding="UTF-8"?>
 <contenttypes>
 	<contenttype typecode="ANN" typedescr="Announcement" viewpage="**NULL**" listmodel="**NULL**" defaultmodel="**NULL**">
@@ -213,6 +212,7 @@ INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'para
 </Params>
 
 ');
+INSERT INTO sysconfig (version, item, descr, config) VALUES ('production', 'subIndexDir', 'Name of the sub-directory containing content indexing files', 'indexdir20121017105033');
 
 
 --

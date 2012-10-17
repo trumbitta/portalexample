@@ -15,84 +15,6 @@ SET search_path = public, pg_catalog;
 -- Data for Name: contents; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('ANN2', 'ANN', 'Sample - Announcement 1', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="ANN2" typecode="ANN" typedescr="Announcement"><descr>Sample - Announcement 1</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="en">Lorem ipsum for the management of dolor sit amet - 1.</text></attribute><attribute name="StartDate" attributetype="Date"><date>20120621</date></attribute><attribute name="EndDate" attributetype="Date"><date>20120831</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
-			
-			<p> Quinoa cardigan bushwick, non PBR aesthetic aliqua.<br /> Put a bird on it artisan terry richardson in, skateboard delectus food truck irure.</p> <p> Fugiat godard odd future scenester messenger bag ut readymade qui.</p>
-			
-			]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154906</created><lastModified>20121010154906</lastModified></content>
-', '20121010154906', '20121010154906', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="ANN2" typecode="ANN" typedescr="Announcement"><descr>Sample - Announcement 1</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="en">Lorem ipsum for the management of dolor sit amet - 1.</text></attribute><attribute name="StartDate" attributetype="Date"><date>20120621</date></attribute><attribute name="EndDate" attributetype="Date"><date>20120831</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
-			
-			<p> Quinoa cardigan bushwick, non PBR aesthetic aliqua.<br /> Put a bird on it artisan terry richardson in, skateboard delectus food truck irure.</p> <p> Fugiat godard odd future scenester messenger bag ut readymade qui.</p>
-			
-			]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154906</created><lastModified>20121010154906</lastModified></content>
-', 'free', '1.0', NULL);
-INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('ANN3', 'ANN', 'Sample - Announcement 2', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="ANN3" typecode="ANN" typedescr="Announcement"><descr>Sample - Announcement 2</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="en">Lorem ipsum for the management of dolor sit amet - 2.</text></attribute><attribute name="StartDate" attributetype="Date"><date>20120621</date></attribute><attribute name="EndDate" attributetype="Date"><date>20120831</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
-			
-			<p> Quinoa cardigan bushwick, non PBR aesthetic aliqua.<br /> Put a bird on it artisan terry richardson in, skateboard delectus food truck irure.</p> <p> Fugiat godard odd future scenester messenger bag ut readymade qui.</p>
-			
-			]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154906</created><lastModified>20121010154906</lastModified></content>
-', '20121010154906', '20121010154906', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="ANN3" typecode="ANN" typedescr="Announcement"><descr>Sample - Announcement 2</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="en">Lorem ipsum for the management of dolor sit amet - 2.</text></attribute><attribute name="StartDate" attributetype="Date"><date>20120621</date></attribute><attribute name="EndDate" attributetype="Date"><date>20120831</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
-			
-			<p> Quinoa cardigan bushwick, non PBR aesthetic aliqua.<br /> Put a bird on it artisan terry richardson in, skateboard delectus food truck irure.</p> <p> Fugiat godard odd future scenester messenger bag ut readymade qui.</p>
-			
-			]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154906</created><lastModified>20121010154906</lastModified></content>
-', 'free', '1.0', NULL);
-INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('ANN4', 'ANN', 'Sample - Announcement 3', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="ANN4" typecode="ANN" typedescr="Announcement"><descr>Sample - Announcement 3</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="en">Lorem ipsum for the management of dolor sit amet - 3.</text></attribute><attribute name="StartDate" attributetype="Date"><date>20120621</date></attribute><attribute name="EndDate" attributetype="Date"><date>20120831</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
-			
-			<p> Quinoa cardigan bushwick, non PBR aesthetic aliqua.<br /> Put a bird on it artisan terry richardson in, skateboard delectus food truck irure.</p> <p> Fugiat godard odd future scenester messenger bag ut readymade qui.</p>
-			
-			]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154906</created><lastModified>20121010154906</lastModified></content>
-', '20121010154906', '20121010154907', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="ANN4" typecode="ANN" typedescr="Announcement"><descr>Sample - Announcement 3</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="en">Lorem ipsum for the management of dolor sit amet - 3.</text></attribute><attribute name="StartDate" attributetype="Date"><date>20120621</date></attribute><attribute name="EndDate" attributetype="Date"><date>20120831</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
-			
-			<p> Quinoa cardigan bushwick, non PBR aesthetic aliqua.<br /> Put a bird on it artisan terry richardson in, skateboard delectus food truck irure.</p> <p> Fugiat godard odd future scenester messenger bag ut readymade qui.</p>
-			
-			]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154906</created><lastModified>20121010154906</lastModified></content>
-', 'free', '1.0', NULL);
-INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('ANN5', 'ANN', 'Sample - Announcement 4', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="ANN5" typecode="ANN" typedescr="Announcement"><descr>Sample - Announcement 4</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="en">Lorem ipsum for the management of dolor sit amet - 4.</text></attribute><attribute name="StartDate" attributetype="Date"><date>20120621</date></attribute><attribute name="EndDate" attributetype="Date"><date>20120831</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
-			
-			<p> Quinoa cardigan bushwick, non PBR aesthetic aliqua.<br /> Put a bird on it artisan terry richardson in, skateboard delectus food truck irure.</p> <p> Fugiat godard odd future scenester messenger bag ut readymade qui.</p>
-			
-			]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154907</created><lastModified>20121010154907</lastModified></content>
-', '20121010154907', '20121010154907', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="ANN5" typecode="ANN" typedescr="Announcement"><descr>Sample - Announcement 4</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="en">Lorem ipsum for the management of dolor sit amet - 4.</text></attribute><attribute name="StartDate" attributetype="Date"><date>20120621</date></attribute><attribute name="EndDate" attributetype="Date"><date>20120831</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
-			
-			<p> Quinoa cardigan bushwick, non PBR aesthetic aliqua.<br /> Put a bird on it artisan terry richardson in, skateboard delectus food truck irure.</p> <p> Fugiat godard odd future scenester messenger bag ut readymade qui.</p>
-			
-			]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154907</created><lastModified>20121010154907</lastModified></content>
-', 'free', '1.0', NULL);
-INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('ANN6', 'ANN', 'Sample - Announcement 5', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="ANN6" typecode="ANN" typedescr="Announcement"><descr>Sample - Announcement 5</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="en">Lorem ipsum for the management of dolor sit amet - 5.</text></attribute><attribute name="StartDate" attributetype="Date"><date>20120621</date></attribute><attribute name="EndDate" attributetype="Date"><date>20120831</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
-			
-			<p> Quinoa cardigan bushwick, non PBR aesthetic aliqua.<br /> Put a bird on it artisan terry richardson in, skateboard delectus food truck irure.</p> <p> Fugiat godard odd future scenester messenger bag ut readymade qui.</p>
-			
-			]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154907</created><lastModified>20121010154907</lastModified></content>
-', '20121010154907', '20121010154907', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="ANN6" typecode="ANN" typedescr="Announcement"><descr>Sample - Announcement 5</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="en">Lorem ipsum for the management of dolor sit amet - 5.</text></attribute><attribute name="StartDate" attributetype="Date"><date>20120621</date></attribute><attribute name="EndDate" attributetype="Date"><date>20120831</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
-			
-			<p> Quinoa cardigan bushwick, non PBR aesthetic aliqua.<br /> Put a bird on it artisan terry richardson in, skateboard delectus food truck irure.</p> <p> Fugiat godard odd future scenester messenger bag ut readymade qui.</p>
-			
-			]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154907</created><lastModified>20121010154907</lastModified></content>
-', 'free', '1.0', NULL);
-INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('ANN7', 'ANN', 'Sample - Announcement 6', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="ANN7" typecode="ANN" typedescr="Announcement"><descr>Sample - Announcement 6</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="en">Lorem ipsum for the management of dolor sit amet - 6.</text></attribute><attribute name="StartDate" attributetype="Date"><date>20120621</date></attribute><attribute name="EndDate" attributetype="Date"><date>20120831</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
-			
-			<p> Quinoa cardigan bushwick, non PBR aesthetic aliqua.<br /> Put a bird on it artisan terry richardson in, skateboard delectus food truck irure.</p> <p> Fugiat godard odd future scenester messenger bag ut readymade qui.</p>
-			
-			]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154907</created><lastModified>20121010154907</lastModified></content>
-', '20121010154907', '20121010154907', '<?xml version="1.0" encoding="UTF-8"?>
-<content id="ANN7" typecode="ANN" typedescr="Announcement"><descr>Sample - Announcement 6</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="en">Lorem ipsum for the management of dolor sit amet - 6.</text></attribute><attribute name="StartDate" attributetype="Date"><date>20120621</date></attribute><attribute name="EndDate" attributetype="Date"><date>20120831</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="en"><![CDATA[
-			
-			<p> Quinoa cardigan bushwick, non PBR aesthetic aliqua.<br /> Put a bird on it artisan terry richardson in, skateboard delectus food truck irure.</p> <p> Fugiat godard odd future scenester messenger bag ut readymade qui.</p>
-			
-			]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154907</created><lastModified>20121010154907</lastModified></content>
-', 'free', '1.0', NULL);
 INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('CNG8', 'CNG', 'Sample - Hero Unit', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
 <content id="CNG8" typecode="CNG" typedescr="Generic Content"><descr>Sample - Hero Unit</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Text"><text lang="en">Hello, world!</text></attribute><attribute name="Abstract" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>]]></hypertext></attribute><attribute name="MainBody" attributetype="Hypertext"><hypertext lang="en"><![CDATA[<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>]]></hypertext></attribute><attribute name="Picture" attributetype="Image" /><attribute name="Caption" attributetype="Text" /><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Learn more »</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>1.0</version><created>20121010154909</created><lastModified>20121010154909</lastModified></content>
 ', '20121010154909', '20121010154909', '<?xml version="1.0" encoding="UTF-8"?>
@@ -289,6 +211,53 @@ INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, l
 	Enjoy Entando!</p>
 ]]></hypertext></attribute><attribute name="Picture" attributetype="Image"><resource resourcetype="Image" id="17" lang="en" /><text lang="en">Official plaque</text></attribute><attribute name="Caption" attributetype="Text"><text lang="en">Entando Town has a very european look.</text></attribute><list attributetype="Monolist" name="Links" nestedtype="Link"><attribute name="Link" attributetype="Link"><link type="external"><urldest>http://www.entando.com/</urldest></link><text lang="en">Learn more »</text></attribute></list><list attributetype="Monolist" name="Attaches" nestedtype="Attach" /></attributes><status>PUBLIC</status><version>3.0</version><lastEditor>admin</lastEditor><created>20121010173248</created><lastModified>20121011111938</lastModified></content>
 ', 'free', '3.0', 'admin');
+INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('ANN20', 'ANN', 'Announcement for special maintenance Nautical Institute', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
+<content id="ANN20" typecode="ANN" typedescr="Announcement"><descr>Announcement for special maintenance Nautical Institute</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="it">Bando di gara per l''esecuzione dei Lavori per la manutenzione dell''Istituto Nautico</text><text lang="en">Announcement for special maintenance Nautical Institute.</text></attribute><attribute name="StartDate" attributetype="Date"><date>20130303</date></attribute><attribute name="EndDate" attributetype="Date"><date>20131114</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
+	Bando di gara per l&#39;esecuzione dei &quot;Lavori per la manutenzione straordinaria dell&#39;Istituto Nautico, per la realizzazione di laboratorio informatico&quot;.</p>
+<p>
+	Appalto n. 3 anno 2009 - Procedura Aperta</p>
+]]></hypertext><hypertext lang="en"><![CDATA[<p>
+	Announcement for special maintenance of Nautical Institute. Realization of a computer lab on the first floor of the institute.</p>
+]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach"><attribute name="Documents" attributetype="Attach"><resource resourcetype="Attach" id="19" lang="en" /><text lang="it">Bando</text><text lang="en">Announcement for maintenance Nautical Institute</text></attribute></list></attributes><status>PUBLIC</status><version>1.0</version><lastEditor>admin</lastEditor><created>20121017110305</created><lastModified>20121017110305</lastModified></content>
+', '20121017110305', '20121017110305', '<?xml version="1.0" encoding="UTF-8"?>
+<content id="ANN20" typecode="ANN" typedescr="Announcement"><descr>Announcement for special maintenance Nautical Institute</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="it">Bando di gara per l''esecuzione dei Lavori per la manutenzione dell''Istituto Nautico</text><text lang="en">Announcement for special maintenance Nautical Institute.</text></attribute><attribute name="StartDate" attributetype="Date"><date>20130303</date></attribute><attribute name="EndDate" attributetype="Date"><date>20131114</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
+	Bando di gara per l&#39;esecuzione dei &quot;Lavori per la manutenzione straordinaria dell&#39;Istituto Nautico, per la realizzazione di laboratorio informatico&quot;.</p>
+<p>
+	Appalto n. 3 anno 2009 - Procedura Aperta</p>
+]]></hypertext><hypertext lang="en"><![CDATA[<p>
+	Announcement for special maintenance of Nautical Institute. Realization of a computer lab on the first floor of the institute.</p>
+]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach"><attribute name="Documents" attributetype="Attach"><resource resourcetype="Attach" id="19" lang="en" /><text lang="it">Bando</text><text lang="en">Announcement for maintenance Nautical Institute</text></attribute></list></attributes><status>PUBLIC</status><version>1.0</version><lastEditor>admin</lastEditor><created>20121017110305</created><lastModified>20121017110305</lastModified></content>
+', 'free', '1.0', 'admin');
+INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('ANN22', 'ANN', 'Announcement for supply of stationery and accessories', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
+<content id="ANN22" typecode="ANN" typedescr="Announcement"><descr>Announcement for supply of stationery and accessories</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="it">Bando di gara per affidamento fornitura di cancelleria e accessori</text><text lang="en">Announcement for supply of stationery and accessories</text></attribute><attribute name="StartDate" attributetype="Date"><date>20130228</date></attribute><attribute name="EndDate" attributetype="Date"><date>20131027</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
+	Affidamento della fornitura di cancelleria e accessori per stampanti, fotocopiatori e fax ad uso degli uffici e servizi comunali.</p>
+<p>
+	Appalto n. 4 anno 2009 - Procedura Aperta</p>
+]]></hypertext><hypertext lang="en"><![CDATA[<p>
+	Announcements for the supply of stationery and accessories for printers, copiers and fax machines to use in Villamarina offices and services.</p>
+]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach"><attribute name="Documents" attributetype="Attach"><resource resourcetype="Attach" id="21" lang="en" /><text lang="it">Scarica il bando</text><text lang="en">Announcements for stationery supply</text></attribute></list></attributes><status>PUBLIC</status><version>1.0</version><lastEditor>admin</lastEditor><created>20121017110649</created><lastModified>20121017110649</lastModified></content>
+', '20121017110649', '20121017110649', '<?xml version="1.0" encoding="UTF-8"?>
+<content id="ANN22" typecode="ANN" typedescr="Announcement"><descr>Announcement for supply of stationery and accessories</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="it">Bando di gara per affidamento fornitura di cancelleria e accessori</text><text lang="en">Announcement for supply of stationery and accessories</text></attribute><attribute name="StartDate" attributetype="Date"><date>20130228</date></attribute><attribute name="EndDate" attributetype="Date"><date>20131027</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
+	Affidamento della fornitura di cancelleria e accessori per stampanti, fotocopiatori e fax ad uso degli uffici e servizi comunali.</p>
+<p>
+	Appalto n. 4 anno 2009 - Procedura Aperta</p>
+]]></hypertext><hypertext lang="en"><![CDATA[<p>
+	Announcements for the supply of stationery and accessories for printers, copiers and fax machines to use in Villamarina offices and services.</p>
+]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach"><attribute name="Documents" attributetype="Attach"><resource resourcetype="Attach" id="21" lang="en" /><text lang="it">Scarica il bando</text><text lang="en">Announcements for stationery supply</text></attribute></list></attributes><status>PUBLIC</status><version>1.0</version><lastEditor>admin</lastEditor><created>20121017110649</created><lastModified>20121017110649</lastModified></content>
+', 'free', '1.0', 'admin');
+INSERT INTO contents (contentid, contenttype, descr, status, workxml, created, lastmodified, onlinexml, maingroup, currentversion, lasteditor) VALUES ('ANN24', 'ANN', 'Announcement for participation in Civil Service', 'PUBLIC', '<?xml version="1.0" encoding="UTF-8"?>
+<content id="ANN24" typecode="ANN" typedescr="Announcement"><descr>Announcement for participation in Civil Service</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="it">Bando di gara per la partecipazione al Servizio Civile</text><text lang="en">Announcement for participation in Civil Service</text></attribute><attribute name="StartDate" attributetype="Date"><date>20120501</date></attribute><attribute name="EndDate" attributetype="Date"><date>20121130</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
+	Bando di gara per la selezione di 10 volontari da impiegare in progetti di servizio civile nel Comune di Entando Town.</p>
+]]></hypertext><hypertext lang="en"><![CDATA[<p>
+	Announcement for the selection of 10 volunteers for civil service projects.</p>
+]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach"><attribute name="Documents" attributetype="Attach"><resource resourcetype="Attach" id="23" lang="en" /><text lang="it">Scarica il bando</text><text lang="en">Civil Service Announcement</text></attribute></list></attributes><status>PUBLIC</status><version>1.0</version><lastEditor>admin</lastEditor><created>20121017110857</created><lastModified>20121017110857</lastModified></content>
+', '20121017110857', '20121017110857', '<?xml version="1.0" encoding="UTF-8"?>
+<content id="ANN24" typecode="ANN" typedescr="Announcement"><descr>Announcement for participation in Civil Service</descr><groups mainGroup="free" /><categories /><attributes><attribute name="Title" attributetype="Longtext"><text lang="it">Bando di gara per la partecipazione al Servizio Civile</text><text lang="en">Announcement for participation in Civil Service</text></attribute><attribute name="StartDate" attributetype="Date"><date>20120501</date></attribute><attribute name="EndDate" attributetype="Date"><date>20121130</date></attribute><attribute name="Summary" attributetype="Hypertext"><hypertext lang="it"><![CDATA[<p>
+	Bando di gara per la selezione di 10 volontari da impiegare in progetti di servizio civile nel Comune di Entando Town.</p>
+]]></hypertext><hypertext lang="en"><![CDATA[<p>
+	Announcement for the selection of 10 volunteers for civil service projects.</p>
+]]></hypertext></attribute><list attributetype="Monolist" name="Documents" nestedtype="Attach"><attribute name="Documents" attributetype="Attach"><resource resourcetype="Attach" id="23" lang="en" /><text lang="it">Scarica il bando</text><text lang="en">Civil Service Announcement</text></attribute></list></attributes><status>PUBLIC</status><version>1.0</version><lastEditor>admin</lastEditor><created>20121017110857</created><lastModified>20121017110857</lastModified></content>
+', 'free', '1.0', 'admin');
 
 
 --
