@@ -15,7 +15,7 @@ SET search_path = public, pg_catalog;
 -- Data for Name: authusers; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO authusers (username, passwd, registrationdate, lastaccess, lastpasswordchange, active) VALUES ('admin', 'adminadmin', '2008-10-10', '2012-10-17', NULL, 1);
+INSERT INTO authusers (username, passwd, registrationdate, lastaccess, lastpasswordchange, active) VALUES ('admin', 'adminadmin', '2008-10-10', '2012-10-18', NULL, 1);
 
 
 --
